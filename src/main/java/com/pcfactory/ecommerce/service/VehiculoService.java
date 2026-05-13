@@ -23,4 +23,8 @@ public class VehiculoService {
     public Optional<Vehiculo> mostrarVehiculoPorId(Long id) {
         return vehiculoRepository.findById(id);
     }
+
+    public Vehiculo guardarVehiculo(Vehiculo vehiculo) {
+        return vehiculoRepository.save(vehiculo);
+    }
 }
